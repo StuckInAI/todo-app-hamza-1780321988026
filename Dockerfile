@@ -9,7 +9,7 @@ RUN npm install --legacy-peer-deps
 
 COPY . .
 
-RUN npm run build && echo 'Build completed successfully'
+RUN npm run build
 
 # Serve stage
 FROM nginx:alpine
